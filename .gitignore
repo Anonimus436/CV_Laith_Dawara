@@ -14,6 +14,7 @@ Files_Drive/
 .env
 .kiro/
 .vscode/
+dist/
 
 # Editor directories and files
 .vscode/*
