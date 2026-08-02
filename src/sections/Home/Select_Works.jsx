@@ -43,8 +43,7 @@ const Select_Works = () => {
         {/* Manage Select Works link */}
         <div className="flex justify-end pb-4 h-[80%]!">
           <Link
-            to="/admin-login?redirect=/manage-select-works"
-            state={{ from: location.pathname }}
+            to={`/admin-login?redirect=${encodeURIComponent("/manage-select-works")}&from=${encodeURIComponent(location.pathname)}`}
             className="inline-flex items-center gap-2 text-sm font-medium text-primary border border-primary rounded-2xl px-5 py-2.5 hover:bg-primary hover:text-black transition-colors duration-300"
           >
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">

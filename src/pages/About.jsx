@@ -11,8 +11,7 @@ const About = () => {
             <About_Info/>
             <div className="flex justify-end px-4 py-6">
                 <Link
-                    to="/admin-login?redirect=/about/edit"
-                    state={{ from: location.pathname }}
+                    to={`/admin-login?redirect=${encodeURIComponent("/about/edit")}&from=${encodeURIComponent(location.pathname)}`}
                     className="inline-flex items-center gap-2 bg-primary text-black font-bold py-2.5 px-5 rounded-xl hover:opacity-90 active:scale-95 transition-all text-sm"
                 >
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">

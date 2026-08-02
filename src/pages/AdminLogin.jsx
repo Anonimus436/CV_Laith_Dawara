@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useNavigate, useSearchParams, useLocation } from "react-router-dom";
 
-const ADMIN_PASSWORD = import.meta.env.VITE_ADMIN_PASSWORD;
+const ADMIN_PASSWORD = import.meta.env.VITE_ADMIN_PASSWORD || "CVL@2026";
 const SESSION_KEY = "admin_authenticated";
 
 export default function AdminLogin() {
@@ -12,7 +12,7 @@ export default function AdminLogin() {
   // The page to go to after a correct password
   const redirect = searchParams.get("redirect") || "/";
   // The page to go back to if the user cancels or enters a wrong password
-  const from = location.state?.from || "/";
+  const from = searchParams.get("from") || location.state?.from || "/";
 
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -50,6 +50,7 @@ export default function AdminLogin() {
       sessionStorage.setItem(SESSION_KEY, "true");
       navigate(redirect, { replace: true });
     } else {
+      setError("Incorrect password. Returning to the previous page.");
       navigate(from, { replace: true });
     }
   }
