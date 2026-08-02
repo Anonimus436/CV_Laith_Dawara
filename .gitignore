@@ -8,13 +8,14 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+dist/
 dist-ssr
 *.local
 Files_Drive/
 .env
 .kiro/
 .vscode/
-dist/
+
 
 # Editor directories and files
 .vscode/*
