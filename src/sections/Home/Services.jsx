@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Container from "../../components/Container" ;
 import Title from "../../components/Title" ;
+import { resolvePublicFilePath } from "../../utils/publicFilePath";
 
 const PDF_PATH = "/files/Portfolio-Laith.pdf";
 
@@ -43,7 +44,7 @@ export default function Services() {
               </h1>
               <p className="text-zinc-400 mt-4">{s.text}</p>
               <a
-                href={PDF_PATH}
+                href={resolvePublicFilePath(PDF_PATH)}
                 download="Portfolio-Laith.pdf"
                 onClick={e => e.stopPropagation()}
                 className="inline-flex items-center gap-2 mt-5 text-sm font-medium text-primary hover:underline hover:opacity-80 transition-opacity"

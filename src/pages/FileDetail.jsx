@@ -2,6 +2,7 @@ import { useParams, Link } from "react-router-dom";
 import Container from "../components/Container";
 import { FILE_REGISTRY } from "../data/worksData";
 import { useWorks } from "../context/WorksContext";
+import { resolvePublicFilePath } from "../utils/publicFilePath";
 
 // Icon helpers
 const DocxIcon = () => (
@@ -128,7 +129,7 @@ const FileDetail = () => {
           {/* Download button */}
           <div className="border-t border-[#272727] pt-6">
             <a
-              href={item.downloadPath}
+              href={resolvePublicFilePath(item.downloadPath)}
               download={item.fileName}
               className="inline-flex items-center gap-3 bg-primary text-black font-semibold px-6 py-3 rounded-2xl hover:opacity-90 active:scale-95 transition-all duration-200"
             >

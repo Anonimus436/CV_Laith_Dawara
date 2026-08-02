@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Container from "../../components/Container";
+import { resolvePublicFilePath } from "../../utils/publicFilePath";
 
 const strategy = [
   "Launched a funnel-based Meta campaign (Top of Funnel – Middle of Funnel – Bottom of Funnel).",
@@ -93,7 +94,7 @@ export default function TechEduLeadGen() {
             Back to Home
           </Link>
           <a
-            href="/files/Portfolio-Laith.pdf"
+            href={resolvePublicFilePath("/files/Portfolio-Laith.pdf")}
             download="Portfolio-Laith.pdf"
             className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline hover:opacity-80 transition-opacity"
           >

@@ -1,3 +1,5 @@
+import { resolvePublicFilePath } from "../utils/publicFilePath";
+
 /**
  * DownloadButton — renders a styled download anchor for a file served from /public.
  *
@@ -11,7 +13,7 @@ const DownloadButton = ({ downloadPath, fileName }) => {
   return (
     <div className="mt-10">
       <a
-        href={downloadPath}
+        href={resolvePublicFilePath(downloadPath)}
         download={fileName}
         className="inline-flex items-center gap-3 bg-primary text-black font-semibold px-6 py-3 rounded-2xl hover:opacity-90 active:scale-95 transition-all duration-200"
       >
