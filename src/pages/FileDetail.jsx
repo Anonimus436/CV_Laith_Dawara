@@ -64,8 +64,8 @@ const FileDetail = () => {
         {/* Hero Image */}
         <img
           src={item.img}
-          alt={item.text}
-          className="w-full max-h-[420px] object-cover rounded-3xl mb-12"
+          alt={item.text} 
+          className="w-full max-h-105 object-cover rounded-3xl mb-12"
         />
 
         {/* Category badge */}
