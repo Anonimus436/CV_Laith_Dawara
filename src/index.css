@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+/* @theme {
+  --color-primary: #ff5900;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-orange: #ff590077;
+  --color-gray: #808080;
+
+} */
+
+@theme{
+    --color-primary: #c35185;
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-card: #404040;
+    --color-title : #737373: 
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+html {
+  font-family: "Roboto Slab", serif;
+   font-display: swap;
+}
+
+.main-btn:hover div {
+  left: 0;
+}
+
+.result-card:hover div {
+  scale: 1;
+}
+
+.shadow-style {
+  width: 1px;
+  height: 1px;
+  box-shadow: 0 0 200px 150px #ff5900;
+  border-radius: 50%;
+}
+
+.shadow-style2 {
+  box-shadow: 0 0 70px 70px #ff590077;
+  border-radius: 50%;
+}
+
+.shadow-style3 {
+  width: 1px;
+  height: 1px;
+  box-shadow: 0 0 150px 150px #ff590077;
+  border-radius: 50%;
+}
+
+.textShadow{
+  box-shadow: 0 0 100px 100px white!;
+}
+
+@keyframes bounce1 {
+  0% { transform: translateX(100%); }
+  /* 50% { transform: translateX(-100%); } */
+  100% { transform: translateX(100%); }
+}
+
+@keyframes brands-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.brands-marquee {
+  animation: brands-scroll 24s linear infinite;
+}
+
+.base:hover{
+.groupClass{
+  animation: bounce1 300ms steps(2);
+}
+}
+

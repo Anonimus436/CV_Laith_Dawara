@@ -1,0 +1,88 @@
+// Static seed data for the "Select Works" section on the Home page.
+// Each item mirrors the shape used in worksData.js so EditCard works with it.
+import img1 from "../assets/images/1.jpg";
+import img2 from "../assets/images/4.jpg";
+import img3 from "../assets/images/6.jpg";
+import img4 from "../assets/images/60.png";
+import img5 from "../assets/images/63.png";
+
+export const SELECT_WORKS_SEED = [
+  {
+    slug: "sw-web-content-analysis",
+    text: "Web Content Analysis",
+    img: img1,
+    link: "/files/wca-web-content",
+    category: "Web Content Analysis",
+    description: "Comprehensive analysis of web content quality, structure, SEO factors, and recommendations for improvement.",
+    fileType: "pdf",
+    fileName: "web content.pdf",
+    client: "General",
+    downloadPath: "/files/WebContentAnalysis/web content.pdf",
+    section: "home",
+  },
+  {
+    slug: "sw-tutors-research",
+    text: "Tutors Research",
+    img: img2,
+    link: "/files/res-tutors",
+    category: "Research",
+    description: "General research document covering the tutoring market, including supply, demand, and key insights.",
+    fileType: "xlsx",
+    fileName: "tutors research.xlsx",
+    client: "General",
+    downloadPath: "/files/Research/tutors research.xlsx",
+    section: "home",
+  },
+  {
+    slug: "sw-edu-hubs-turkey",
+    text: "Educational Hubs in Turkey",
+    img: img3,
+    link: "/files/res-edu-turkey",
+    category: "Research",
+    description: "Research on educational hub landscape in Turkey including key players and market trends.",
+    fileType: "xlsx",
+    fileName: "educational hubs in turkey.xlsx",
+    client: "General",
+    downloadPath: "/files/Research/educational hubs in turkey.xlsx",
+    section: "home",
+  },
+  {
+    slug: "sw-migravia-research",
+    text: "Market Research — Migravia Syria",
+    img: img4,
+    link: "/files/res-migravia",
+    category: "Research",
+    description: "In-depth market research for Migravia in the Syrian market covering audience segments and competitive landscape.",
+    fileType: "pdf",
+    fileName: "Market research Migravia sy.pdf",
+    client: "Migravia",
+    downloadPath: "/files/Research/Market research Migravia sy.pdf",
+    section: "home",
+  },
+  {
+    slug: "sw-reel-scripts",
+    text: "Reel Scripts — Diverse Cultural Facts",
+    img: img5,
+    link: "/files/rs-thaqafa",
+    category: "Reel Scripts",
+    description: "A collection of reel scripts covering diverse cultural facts, designed to boost engagement and reach.",
+    fileType: "docx",
+    fileName: "سكربتات معلومات ثقافية متنوعة.docx",
+    client: "General",
+    downloadPath: "/files/ReelScripts/سكربتات معلومات ثقافية متنوعة.docx",
+    section: "home",
+  },
+  {
+    slug: "sw-hadaya-marketing",
+    text: "Marketing Strategy — Hadaya",
+    img: img1,
+    link: "/files/ms-hadaya",
+    category: "Marketing Strategy",
+    description: "Marketing strategy for Hadaya including seasonal campaign plans and promotional activities.",
+    fileType: "pdf",
+    fileName: "استراتيجية هدايا -التسويق.pdf",
+    client: "Hadaya",
+    downloadPath: "/files/MarketingStrategy/استراتيجية هدايا -التسويق.pdf",
+    section: "home",
+  },
+];
